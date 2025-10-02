@@ -1,0 +1,20 @@
+{
+  "name": "golddigger",
+  "version": "1.0.0",
+  "description": "site that shows the variation of gold price.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benon78/GoldDigger.git"
+  },
+  "author": "Benon78",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benon78/GoldDigger/issues"
+  },
+  "homepage": "https://github.com/Benon78/GoldDigger#readme"
+}
