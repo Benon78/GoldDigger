@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Benon78/GoldDigger/issues"
   },
-  "homepage": "https://github.com/Benon78/GoldDigger#readme"
+  "homepage": "https://github.com/Benon78/GoldDigger#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
