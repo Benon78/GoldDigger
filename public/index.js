@@ -43,7 +43,7 @@ investBtn.addEventListener('click', async (e) => {
         amountPaid: amount,
         pricePerOz: newGoldPrice,
         goldSold: goldSold.toFixed(2),
-        email: 'benjamin82@gmail.com'
+        email: 'benjaminadina82@gmail.com'
     }
 
     try {
