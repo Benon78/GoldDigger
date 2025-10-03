@@ -1,10 +1,11 @@
 import http from 'node:http';
 import EventEmitter from 'node:events';
+import dotenv from 'dotenv'
 import { serveStatic } from './utils/serveStatic.js';
 import { getGoldPrice } from './utils/getLivePrice.js';
 import { handlePost } from './controllers/handlePostController.js';
 
-
+dotenv.config();
 const PORT = 8000;
 const __dirname = import.meta.dirname;
 
