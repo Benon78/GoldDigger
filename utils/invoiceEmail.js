@@ -29,7 +29,7 @@ export const sendInvoiceEmail = async (transaction, baseDir) => {
 
             Best regards,
             GoldDigger Team`,
-            attachements: [
+            attachments: [
                 {
                     filename: `invoice-${transaction.id}.pdf`,
                     path: invoicePath,
