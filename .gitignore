@@ -1,3 +1,4 @@
 node_modules
 .env
 purchase.txt
+invoices
