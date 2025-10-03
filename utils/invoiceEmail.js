@@ -16,6 +16,23 @@ export const sendInvoiceEmail = async (transaction, baseDir) => {
             },
         });
 
+        // 3️⃣ Build HTML email
+            const htmlContent = `
+            <div style="font-family: Arial, sans-serif; color: #333;">
+                <h2 style="color:#d4af37;">GoldDigger Investment Confirmation</h2>
+                <p>Dear Investor,</p>
+                <p>Thank you for your investment with <strong>GoldDigger</strong>.</p>
+                <p><strong>Transaction Summary:</strong></p>
+                <ul>
+                <li><b>Transaction ID:</b> ${transaction.id}</li>
+                <li><b>Amount Paid:</b> £${transaction.amountPaid}</li>
+                <li><b>Gold Purchased:</b> ${transaction.goldSold} oz</li>
+                </ul>
+                <p>Please find your official invoice attached as a PDF document.</p>
+                <p style="margin-top:20px;">Best regards,<br/>The GoldDigger Team</p>
+            </div>
+            `;
+
         // Setup email details
         const mailOptions = {
             from: `"GoldDigger" <${process.env.GOOGLE_EMAIL_USER}>`,
@@ -29,6 +46,7 @@ export const sendInvoiceEmail = async (transaction, baseDir) => {
 
             Best regards,
             GoldDigger Team`,
+            html: htmlContent,
             attachments: [
                 {
                     filename: `invoice-${transaction.id}.pdf`,
